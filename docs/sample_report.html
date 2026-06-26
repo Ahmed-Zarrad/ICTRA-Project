@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Phishing risk report &mdash; Someone tried to Iog in To Your Account, User lD : phishing@pot</title>
+<style>
+  :root { color-scheme: light; }
+  * { box-sizing: border-box; }
+  body { font-family: -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+         margin: 0; background: #f1f5f9; color: #0f172a; }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 24px; }
+  .card { background: #fff; border: 1px solid #e2e8f0; border-radius: 12px;
+          padding: 20px 24px; margin-bottom: 18px; box-shadow: 0 1px 2px rgba(0,0,0,.04); }
+  h1 { font-size: 20px; margin: 0 0 4px; }
+  h3 { font-size: 15px; margin: 18px 0 8px; }
+  .muted { color: #64748b; font-weight: normal; }
+  .verdict { display: flex; align-items: center; gap: 18px; }
+  .badge { background: #b91c1c; color: #fdecec; border-radius: 10px; padding: 14px 20px;
+           text-align: center; min-width: 150px; }
+  .badge .band { font-size: 22px; font-weight: 700; text-transform: uppercase;
+                 letter-spacing: .5px; }
+  .badge .score { font-size: 13px; opacity: .9; }
+  .bar { position: relative; background: #e2e8f0; border-radius: 6px; height: 22px;
+         margin: 6px 0 4px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 6px 0 0 6px; }
+  .bar-label { position: absolute; right: 8px; top: 1px; font-size: 12px;
+               color: #0f172a; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  .meta th { text-align: left; width: 130px; color: #475569; font-weight: 600;
+             padding: 4px 8px; vertical-align: top; white-space: nowrap; }
+  .meta td { padding: 4px 8px; vertical-align: top; word-break: break-word; }
+  .findings td, .findings th { padding: 7px 8px; border-top: 1px solid #eef2f7;
+                               text-align: left; vertical-align: top; }
+  .findings tr.head th { border-top: none; color: #475569; font-size: 12px; }
+  .findings .pts { font-variant-numeric: tabular-nums; white-space: nowrap;
+                   color: #334155; }
+  .findings .sev { white-space: nowrap; }
+  .pill { color: #fff; border-radius: 999px; padding: 2px 9px; font-size: 11px;
+          text-transform: uppercase; letter-spacing: .4px; }
+  footer { text-align: center; color: #94a3b8; font-size: 12px; padding: 8px 0 24px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="card">
+    <h1>Phishing Risk Report</h1>
+    <div class="muted" style="margin-bottom:14px">Someone tried to Iog in To Your Account, User lD : phishing@pot</div>
+    <div class="verdict">
+      <div class="badge">
+        <div class="band">critical</div>
+        <div class="score">risk score 100/100</div>
+      </div>
+      <div style="flex:1"><div class="bar"><div class="bar-fill" style="width:100%;background:#b91c1c"></div><span class="bar-label">100/100</span></div></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>Message</h3>
+    <table class="meta"><tr><th>From</th><td>Facebook</td></tr>
+<tr><th>Subject</th><td>Someone tried to Iog in To Your Account, User lD : phishing@pot</td></tr>
+<tr><th>Reply-To</th><td>secureinternationalalterts10@gmail.com</td></tr>
+<tr><th>Return-Path</th><td>bounce@kabilation.co.uk</td></tr>
+<tr><th>Date</th><td>Fri, 16 Sep 2022 06:07:31 +0000</td></tr>
+<tr><th>Links found</th><td>4</td></tr>
+<tr><th>Source</th><td>phishing_pot-main\email\sample-50.eml</td></tr></table>
+  </div>
+
+  <div class="card">
+    <h3>Per-module breakdown</h3>
+    <section class="module"><h3>Header &amp; authentication <span class="muted">(header &middot; weight 40%)</span></h3><div class="bar"><div class="bar-fill" style="width:100%;background:#c2410c"></div><span class="bar-label">100/100</span></div><table class="findings"><tr class="head"><th>Severity</th><th>Pts</th><th>Finding</th></tr><tr><td class="sev"><span class="pill" style="background:#c2410c">high</span></td><td class="pts">+26</td><td><strong>From address is empty/malformed</strong><br><span class="muted">The From header has no real address (display name: &quot;Facebook&quot;) -- a common spoofing trick.</span></td></tr><tr><td class="sev"><span class="pill" style="background:#c2410c">high</span></td><td class="pts">+24</td><td><strong>Display name impersonates a brand</strong><br><span class="muted">Display name claims &quot;Facebook&quot; but the message has no verifiable sender domain (no &quot;facebook&quot; relationship).</span></td></tr><tr><td class="sev"><span class="pill" style="background:#b7791f">medium</span></td><td class="pts">+14</td><td><strong>DKIM = none</strong><br><span class="muted">DKIM authentication returned &#x27;none&#x27;.</span></td></tr><tr><td class="sev"><span class="pill" style="background:#b7791f">medium</span></td><td class="pts">+16</td><td><strong>DMARC = none</strong><br><span class="muted">DMARC authentication returned &#x27;none&#x27;.</span></td></tr><tr><td class="sev"><span class="pill" style="background:#b7791f">medium</span></td><td class="pts">+22</td><td><strong>Reply-To diverted to free webmail</strong><br><span class="muted">Replies are directed to &#x27;secureinternationalalterts10@gmail.com&#x27; (free webmail) but the sender provides no verifiable address.</span></td></tr><tr><td class="sev"><span class="pill" style="background:#2563eb">low</span></td><td class="pts">+10</td><td><strong>SPF = none</strong><br><span class="muted">SPF authentication returned &#x27;none&#x27;.</span></td></tr></table></section>
+<section class="module"><h3>Links &amp; destinations <span class="muted">(link &middot; weight 35%)</span></h3><div class="bar"><div class="bar-fill" style="width:0%;background:#2563eb"></div><span class="bar-label">0/100</span></div><table class="findings"><tr class="head"><th>Severity</th><th>Pts</th><th>Finding</th></tr><tr><td colspan="3" class="muted">No findings.</td></tr></table></section>
+<section class="module"><h3>Language &amp; wording <span class="muted">(language &middot; weight 25%)</span></h3><div class="bar"><div class="bar-fill" style="width:0%;background:#2563eb"></div><span class="bar-label">0/100</span></div><table class="findings"><tr class="head"><th>Severity</th><th>Pts</th><th>Finding</th></tr><tr><td colspan="3" class="muted">No findings.</td></tr></table></section>
+  </div>
+
+  <footer>Generated by phish_analyzer (rule-based) &middot; 2026-06-24 17:53:42</footer>
+</div>
+</body>
+</html>
